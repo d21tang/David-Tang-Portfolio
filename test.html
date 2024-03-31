@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Tang - UX Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        /* Custom styles */
+        .section-block {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+
+        }
+
+        .section-title {
+            display: flex;
+            flex-shrink: 0; /* Prevents the title from shrinking */
+            margin-right: 1rem; /* Space between the title and the paragraph */
+        }
+
+        .section-title::before {
+            content: '';
+            width: 200px; /* Length of the horizontal line */
+            border-bottom: 3px solid #000000; /* Color of the horizontal line */
+            margin-right: 1rem; /* Space between the line and the title */
+            margin-top: 0.3em;
+        }
+
+        .section-content {
+            flex-grow: 1;
+            padding-left: 3rem; /* Space inside the paragraph area */
+        }
+
+        .hero .title {
+            font-size: 3rem; 
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            padding: 3rem 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .footer .title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Additional custom styles */
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .level-right a {
+            margin-left: 1rem;
+        }
+
+        .primColor {
+        background-color: #FFC500;
+    }
+    
+    </style>
+</head>
+<body class="primColor">
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="title">David Tang</p>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <p class="level-item"><a href="#">Projects</a></p>
+                        <p class="level-item"><a href="#">Contacts</a></p>
+                        <p class="level-item"><a href="#">Resume</a></p>
+                    </div>
+                </nav>
+
+                <div class="section-block">
+                    <div class="section-title">
+                        <div class="title-line"></div>
+                        <h2 class="subtitle">Who</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>My name is David, a passionate UX designer crafting meaningful digital experiences. With a Bachelor's in Computer Science from Siena College, along with minors in Marketing and Mathematics, I'm excited to share my journey and showcase my work in UX design.</p>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <div class="section-title">
+                        <div class="title-line"></div>
+                        <h2 class="subtitle">Why</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>UX design captivates me for its power to transform lives. Merging creativity, empathy, and technical prowess, it's the art of crafting digital experiences that resonate deeply with users, driving meaningful connections and lasting impressions.</p>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <div class="section-title">
+                        <div class="title-line"></div>
+                        <h2 class="subtitle"><strong>Work</strong></h2>
+                    </div>
+                    <div class="section-content">
+                        <p>During my time at Siena College, I've immersed myself in UX design through various projects and coursework. From developing a roommate-finding app to creating a child-friendly delivery service concept, I've refined my skills in user research, creating wireframes, prototyping, and digital marketing. My advanced programming projects have also strengthened my ability to bring creative ideas to life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer primColor">
+        <div class="content has-text-centered">
+            <h1 class="title">Get in Touch.</h1>
+            <p>David Tang</p>
+            <p>(518) 512-7744</p>
+            <p><a href="mailto:d2ltang@siena.edu">d2ltang@siena.edu</a></p>
+            <p><a href="https://linkedin.com/in/davidtang">LinkedIn</a></p>
+        </div>
+    </footer>
+</body>
+</html>
