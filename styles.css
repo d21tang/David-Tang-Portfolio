@@ -1,0 +1,74 @@
+/* FONTFACE */
+.parent-container {  /* This class needs to be added to the parent container in your HTML */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    /* align-items: center;    Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+/* .header-font-size {
+    font-size: 5rem;
+} */
+/* COLORS */
+.primColor {
+    background-color: #FFC500;
+}
+.navbar-link::after {
+    border-top-color: #FFC500;
+}
+/* MARGINS */
+.content-wrapper {
+        margin: auto;
+        max-width: 90%;
+        padding: 2%;
+        /* text-align: left; */
+}
+.left-margin {
+    margin-right: 50rem;
+    color: black;
+}
+
+.hero {
+    /* margin: auto; */
+    margin-left: 30px;
+    color: black;
+    font-size: 35pt;
+    flex: .5;
+    font-weight: bold;
+}
+
+.title {
+    margin-left: 320px;
+    margin-top: 30px;
+    color: black;
+    font-size: 35pt;
+    flex: .5;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.text {
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.foot {
+    color: black;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+
+
+/* NAVBAR & FOOTER */
+.navbar {
+    text-align: left;
+}
+.footer {
+    text-align: left;
+    margin-left: 30px;
+}
