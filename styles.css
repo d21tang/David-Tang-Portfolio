@@ -2,52 +2,24 @@
 .parent-container {  /* This class needs to be added to the parent container in your HTML */
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    /* align-items: center;    Center-align items horizontally */
+    
     justify-content: center; /* Center-align items vertically */
+    width: 100%
 }
 body {
     font-family: Roboto, sans-serif;
 }
-/* .header-font-size {
-    font-size: 5rem;
-} */
+
 /* COLORS */
 .primColor {
     background-color: #FFC500;
 }
-.navbar-link::after {
-    border-top-color: #FFC500;
-}
+
 /* MARGINS */
 .content-wrapper {
         margin: auto;
         max-width: 90%;
         padding: 2%;
-        /* text-align: left; */
-}
-.left-margin {
-    margin-right: 50rem;
-    color: black;
-}
-
-.hero {
-    /* margin: auto; */
-    margin-left: 30px;
-    color: black;
-    font-size: 35pt;
-    flex: .5;
-    font-weight: bold;
-}
-
-.title {
-    margin-left: 320px;
-    margin-top: 30px;
-    color: black;
-    font-size: 35pt;
-    flex: .5;
-    font-weight: bold;
-    text-align: left;
-
 }
 
 .text {
@@ -56,19 +28,50 @@ body {
     font-weight: bold;
 }
 
-.foot {
+
+/* Title and Footer Alignment */
+.title, .footer {
     color: black;
-    font-size: 30pt;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 20pt;
     font-weight: bold;
 }
 
 
 
-/* NAVBAR & FOOTER */
+/* NAVBAR */
 .navbar {
-    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligning items on opposite ends */
+    padding: 0 10px; /* Padding for left and right space */
 }
-.footer {
-    text-align: left;
-    margin-left: 30px;
+.navbar-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* Navbar hover effect */
+.navbar-item:hover, .navbar-link:hover {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #3273dc; /* Bulma's primary color for contrast */
+}
+
+/* Dropdown hover effect */
+.navbar-dropdown a:hover {
+    background-color: #3273dc; /* Bulma's primary color for background */
+    color: #ffffff; /* White text color */
 }
