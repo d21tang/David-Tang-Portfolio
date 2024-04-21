@@ -2,7 +2,6 @@
 .parent-container {  /* This class needs to be added to the parent container in your HTML */
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    
     justify-content: center; /* Center-align items vertically */
     width: 100%
 }
@@ -17,20 +16,26 @@ body {
 
 /* MARGINS */
 .content-wrapper {
-        margin: auto;
-        max-width: 90%;
-        padding: 2%;
+    margin: auto;
+    max-width: 96%;
+    padding: 4%;
 }
 
 .text {
     color: black;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: bold;
 }
 
+/* .hr {
+    width: 75%;
+    margin: auto;
+    height: 2%;
+    border: 0;
+} */
 
 /* Title and Footer Alignment */
-.title, .footer {
+.title, .foot{
     color: black;
     width: 50%;
     position: relative;
@@ -44,12 +49,17 @@ body {
     font-weight: bold;
 }
 
-.footer {
+.foot {
     font-size: 20pt;
     font-weight: bold;
 }
 
-
+.details {
+    position: relative; /* Needed for absolute positioning of child elements */
+    width: 80%;        /* Full width to ensure margin percentage behaves as expected */
+    text-align: left;   /* Aligns the text to the left; use if text alignment adjustments are needed */
+    margin-left: 25%;
+}
 
 /* NAVBAR */
 .navbar {
@@ -67,11 +77,14 @@ body {
 /* Navbar hover effect */
 .navbar-item:hover, .navbar-link:hover {
     background-color: #f4f4f4; /* Light grey background */
-    color: #3273dc; /* Bulma's primary color for contrast */
+    color: #0D58A6; /* Bulma's primary color for contrast */
+}
+.navbar-item {
+    font-weight: bold;
 }
 
 /* Dropdown hover effect */
 .navbar-dropdown a:hover {
-    background-color: #3273dc; /* Bulma's primary color for background */
+    background-color: #0D58A6; /* Bulma's primary color for background */
     color: #ffffff; /* White text color */
 }
