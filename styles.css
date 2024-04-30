@@ -145,26 +145,13 @@ body {
     color: #ffffff; /* White text color */
 }
 
-/* MODAL */
-.modal-background {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.modal-card {
-    background-color: #FFC500; /* Vivid yellow background */
-    color: black; /* Text color */
-    font-size: 1.2em; /* Larger text */
-    width: 80%; /* Larger modal */
-}
-.modal-card-head {
-    background-color: black;
-    color: #FFC500;
-}
-/* Close button styling */
-.delete {
-    color: #FFC500;
-    font-size: 1.5em; /* Larger close button */
-}
-/* Title color */
-.modal-card-title {
-    color: #FFC500;
-}
+.project-toggle {
+    color: #0645ad; /* Typical link color */
+    text-decoration: underline; /* Underline to mimic a hyperlink */
+    cursor: pointer; /* Cursor pointer to indicate clickability */
+  }
+  .project-toggle:focus {
+    outline: none; /* Optional: replace with a more visually appealing focus indicator */
+    background-color: lightgray; /* Optional: visual feedback on focus */
+  }
+  
