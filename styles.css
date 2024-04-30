@@ -79,7 +79,22 @@ body {
     }
     .foot a {
         color: black;
+        transition: color 0.5s ease;
     }
+    /* Link Hover Effect */
+    .foot a:hover { 
+        color: #3273dc;
+    }
+
+.deatails:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.text:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover for readability */
+    padding: 1px; /* Add padding for better effect */
+    border-radius: 12px; /* Rounded corners for aesthetic */
+}
 
 .details {
     position: relative; 
@@ -88,6 +103,7 @@ body {
     margin-left: 26%;
     margin-top: 40px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease;
 }
 .details2 {
     position: relative; 
