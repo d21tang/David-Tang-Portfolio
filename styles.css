@@ -85,7 +85,7 @@ body {
     position: relative; 
     width: 80%;
     text-align: left;  
-    margin-left: 25%;
+    margin-left: 26%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -93,9 +93,12 @@ body {
     position: relative; 
     width: 80%;
     text-align: left;  
-    margin-left: 35%;
+    margin-left: 29%;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+.link {
+    color: #0000EE;
 }
 
 /* NAVBAR */
@@ -124,4 +127,28 @@ body {
 .navbar-dropdown a:hover {
     background-color: black; /* Bulma's primary color for background */
     color: #ffffff; /* White text color */
+}
+
+/* MODAL */
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-card {
+    background-color: #FFC500; /* Vivid yellow background */
+    color: black; /* Text color */
+    font-size: 1.2em; /* Larger text */
+    width: 80%; /* Larger modal */
+}
+.modal-card-head {
+    background-color: black;
+    color: #FFC500;
+}
+/* Close button styling */
+.delete {
+    color: #FFC500;
+    font-size: 1.5em; /* Larger close button */
+}
+/* Title color */
+.modal-card-title {
+    color: #FFC500;
 }
