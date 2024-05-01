@@ -5,11 +5,13 @@
     justify-content: center; /* Center-align items vertically */
     width: 100%
 }
-body {
+body, html {
     font-family: Roboto, sans-serif;
     height: 100%;
     background-color: #FFC500;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 /* MARGINS */
@@ -39,28 +41,13 @@ body {
     font-weight: bold;
 }
 
-.hr-first {
-    margin-left: 39.5rem;
-    margin-right: 39.5rem;
-    margin-top: 0;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-.hr-title {
-    margin-left: 39.5rem;
-    margin-right: 39.5rem;
-    margin-top: 3rem;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
 .title, .foot{
     color: black;
     width: 52%;
     position: relative;
     left: 25%;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 80px;
 }
     .title {
         font-size: 35pt;
@@ -91,9 +78,9 @@ body {
     cursor: pointer;
 }
 .text:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover for readability */
-    padding: 1px; /* Add padding for better effect */
-    border-radius: 12px; /* Rounded corners for aesthetic */
+    background-color: #FAE29C; /* Light background on hover for readability */
+    padding-left: 10px; /* Add padding for better effect */
+    border-radius: 0px; /* Rounded corners for aesthetic */
 }
 
 .details {
@@ -105,35 +92,41 @@ body {
     margin-bottom: 40px;
     transition: transform 0.3s ease;
 }
-.details2 {
-    position: relative; 
-    width: 80%;
-    text-align: left;  
-    margin-left: 29%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+/* summary {
+    color: black;
+    font-size: 10px
+} */
 .link {
     color: #0000EE;
 }
 
 /* NAVBAR */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
     width: 100%;
+    z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Aligning items on opposite ends */
-    padding: 0 10px; /* Padding for left and right space */
+    justify-content: space-between;
+    padding: 0;
+    background-color: #FFC500;
 }
 .navbar-menu {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+}
+.navfit {
+    margin-right: 192px;
 }
 /* Navbar hover effect */
 .navbar-item:hover, .navbar-link:hover {
     background-color: #f4f4f4; /* Light grey background */
-    color: black; /* Bulma's primary color for contrast */
+    color: #FAE29C; /* Bulma's primary color for contrast */
 }
 .navbar-item {
     font-weight: bold;
